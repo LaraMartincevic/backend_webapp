@@ -7,7 +7,7 @@ import res from "express/lib/response.js";
 import auth from "./auth.js";
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
